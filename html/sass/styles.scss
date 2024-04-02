@@ -545,7 +545,7 @@ p.line{
   margin-bottom: 32px;
   &:before{
     position: absolute;
-    top: 4px;
+    top: 6px;
     left: 0;
     content: '';
     width: 43px;
@@ -806,7 +806,7 @@ h2{
     font-size: 16px;
     line-height: 26px;
     &:before{
-      top: 7px;
+      top: 9px;
     }
   }
   .top{
@@ -1375,7 +1375,7 @@ footer{
     width: 100%;
     margin-bottom: 21px;
     &:before{
-      top: 7px;
+      top: 9px;
     }
   }
 }
@@ -1428,7 +1428,7 @@ footer{
     width: 100%;
     margin-bottom: 21px;
     &:before{
-      top: 7px;
+      top: 9px;
     }
   }
 }

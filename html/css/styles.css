@@ -471,7 +471,7 @@ p.line {
   margin-bottom: 32px; }
   p.line:before {
     position: absolute;
-    top: 4px;
+    top: 6px;
     left: 0;
     content: '';
     width: 43px;
@@ -700,7 +700,7 @@ h2 {
     font-size: 16px;
     line-height: 26px; }
     .media-section .line:before {
-      top: 7px; }
+      top: 9px; }
   .media-section .top {
     position: relative;
     padding: 87px 85px 6px; }
@@ -1183,7 +1183,7 @@ footer {
     width: 100%;
     margin-bottom: 21px; }
     .banner-404 .line:before {
-      top: 7px; }
+      top: 9px; }
 
 .btn-grey {
   background: #799EB6; }
@@ -1225,7 +1225,7 @@ footer {
     width: 100%;
     margin-bottom: 21px; }
     .banner-specialism .line:before {
-      top: 7px; }
+      top: 9px; }
 
 .nice-select {
   float: inherit;
@@ -1296,4 +1296,5 @@ footer {
   grid-template-columns: repeat(3, 1fr); }
 
 /*--------------------------END-ITEM-3X----------------------------*/
+
 /*# sourceMappingURL=styles.css.map */

@@ -114,4 +114,16 @@ jQuery(document).ready(function ($) {
   $('.select-block select').niceSelect();
 
 
+
+  //sub-menu open/close - mob-menu
+  $(document).on('click', '.mob-menu .sub-item>a', function (e){
+    e.preventDefault();
+    let item = $(this).closest('li').find('.sub-menu');
+    $(this).toggleClass('is-open');
+    if($(this).hasClass('is-open')){
+      item.slideDown();
+    }else{
+      item.slideUp();
+    }
+  });
 });
