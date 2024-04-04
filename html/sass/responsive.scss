@@ -10,6 +10,9 @@ $red: #ff0007;
   .media-section .video-wrap .wrap{
     right: 12px;
   }
+  .media-section .top-revers .video-wrap .wrap{
+    left: 12px;
+  }
 }
 @media (max-width:1279px) {
   .bg video, .bg iframe{
@@ -179,6 +182,32 @@ $red: #ff0007;
   .text-img-block .bottom{
     padding: 0 15px;
   }
+  .banner-specialism .content-flex {
+    padding: 0 0 40px;
+  }
+  .item-3x .content{
+    padding: 0;
+  }
+  .img-text .content{
+    padding: 0;
+  }
+  .img-text .text-wrap{
+    .line{
+      width: 100%;
+    }
+  }
+  .img-text .text-wrap {
+    padding: 30px 0 0 5%;
+  }
+  .img-text-revers .text-wrap {
+    padding: 30px 5% 0 0;
+  }
+  .item-3x-bg .wrap {
+    padding: 65px 40px 0;
+  }
+  .media-section .top-revers{
+    margin-top: 30px;
+  }
 }
 
 @media (max-width:1199px){
@@ -198,6 +227,19 @@ $red: #ff0007;
   .top-line .right:after{
     display: none;
   }
+  .knowledge-3x .form-default .input-wrap {
+    width: calc(50% - 80px);
+  }
+  .knowledge-3x .item-form .form-wrap{
+    padding: 0;
+  }
+
+  .media-section .top-revers .video-wrap .wrap{
+    left: 16%;
+    height: 400px;
+    top: 100px;
+  }
+
 }
 
 @media (max-width:991px) {
@@ -208,7 +250,7 @@ $red: #ff0007;
     font-size: 36px;
     line-height: 1.1;
   }
-  p.line{
+  .line{
     font-size: 16px;
     line-height: 22px;
   }
@@ -309,6 +351,50 @@ $red: #ff0007;
   .banner-404{
     padding-top: 120px;
   }
+  .banner-specialism .left{
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .item-3x .content {
+    grid-gap: 30px 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img-text {
+    padding: 40px 0;
+  }
+  .item-2x .item .text-wrap {
+    bottom: 30px;
+    left: 20px;
+  }
+  .knowledge-3x .item {
+    width: calc(50% - 15px);
+  }
+  .item-3x .content {
+    grid-gap: 30px 30px;
+  }
+  .knowledge-3x .item-form{
+    padding: 40px 20px;
+  }
+  .knowledge-3x .item-form .title-item-wrap{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .knowledge-3x .item-form .form-wrap{
+    width: 100%;
+  }
+  .media-section .top-revers .video-wrap .wrap{
+    position: relative;
+    right: 0;
+    width: 100%;
+    border-radius: 15px;
+    height: 300px;
+    margin-bottom: 40px;
+    top: 0;
+    left: 0;
+  }
+  .only-bg{
+    height: 600px;
+  }
 }
 
 @media (max-width:767px) {
@@ -407,6 +493,50 @@ $red: #ff0007;
     width: 100%;
     padding-left: 0;
   }
+  .item-3x .content {
+    grid-gap: 25px 25px;
+  }
+  .img-text .content{
+    flex-direction: column;
+  }
+  .img-text figure{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .img-text .text-wrap{
+    width: 100%;
+    padding: 0;
+  }
+  .home-banner.no-img .bg img {
+    display: none !important;
+  }
+  .item-2x .item .link-wrap, .knowledge-3x .item .link-wrap{
+    width: 50px!important;
+    height: 50px!important;
+  }
+  .item-2x .item .text-wrap{
+    right: 55px;
+    left: 15px;
+    bottom: 20px;
+  }
+  .knowledge-3x .item .text-wrap ul li{
+    width: 100%;
+  }
+  .knowledge-3x .item .text-wrap ul li + li {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 5px;
+    &:before{
+      display: none;
+    }
+  }
+  .knowledge-3x .item figure {
+    height: 350px;
+  }
+  .item-3x-bg .wrap {
+    padding: 30px 15px 0;
+  }
 }
 
 @media (max-width:575px) {
@@ -422,11 +552,11 @@ $red: #ff0007;
   .top-line .lang-wrap{
     margin-right: 0;
   }
-  p.line{
+  .line{
     width: 100%;
     padding-left: 30px;
   }
-  p.line:before{
+  .line:before{
     width: 20px;
     height: 2px;
     top: 6px;
@@ -568,5 +698,52 @@ $red: #ff0007;
   }
   .banner-404{
     margin-bottom: 70px;
+  }
+  .item-3x .item figure{
+    height: 250px;
+  }
+  .item-3x .item .text-wrap {
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+  }
+  .item-3x .item .text-wrap h6 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .bg-slider-img .title{
+    text-align: center;
+  }
+  .bg-slider-img .bottom .text p{
+    text-align: center;
+  }
+  .bg-slider-img .bottom figure{
+    text-align: center;
+  }
+  .item-2x .item{
+    width: 100%;
+  }
+  .item-2x .item figure{
+    height: 250px;
+  }
+  .knowledge-3x .item {
+    width: 100%;
+  }
+  .knowledge-3x .form-default .input-wrap{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .only-bg{
+    width: calc(100% - 20px)!important;
+  }
+  .bg-grey-wrap{
+    margin: 10px;
+  }
+}
+
+@media (max-width: 374px){
+  .item-3x .content {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

@@ -126,4 +126,13 @@ jQuery(document).ready(function ($) {
       item.slideUp();
     }
   });
+
+  //scroll
+
+  $(document).on('click', '.scroll', function (e) {
+    e.preventDefault();
+    var id  = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top - 100}, 1000);
+  });
 });
