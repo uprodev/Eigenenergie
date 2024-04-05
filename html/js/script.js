@@ -135,4 +135,20 @@ jQuery(document).ready(function ($) {
       top = $(id).offset().top;
     $('body,html').animate({scrollTop: top - 100}, 1000);
   });
+
+  //add bg
+  if($('main section:last-child').hasClass('bg-grey') || $('main section:last-child').hasClass('item-2x-title')){
+    $('footer').addClass('bg-grey')
+  }else{
+    $('footer').removeClass('bg-grey')
+  }
+
+  //accordion
+  $(function() {
+    $(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
+    $(document).on('click', '.accordion > .accordion-item .accordion-thumb', function (e){
+      $(this).parent('.accordion-item').siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
+      $(this).parent('.accordion-item').toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
+    })
+  });
 });
