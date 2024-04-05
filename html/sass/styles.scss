@@ -2612,4 +2612,16 @@ footer.bg-grey{
 .pb-0{
   padding-bottom: 0!important;
 }
+.banner-specialism .line:before {
+  top: 5px;
+}
+
+.bg-grey-wrap{
+  .home-banner{
+    margin: 0;
+  }
+  .only-bg {
+    width: 100%!important;
+  }
+}
 /*--------------------END-UPS-SECTION-------------------------*/
