@@ -307,6 +307,8 @@ header {
 .home-banner {
   position: relative;
   padding: 151px 0 0; }
+  .home-banner .mob-img {
+    display: none; }
   .home-banner .bg {
     border-radius: 15px 15px 15px 15px; }
     .home-banner .bg:after {

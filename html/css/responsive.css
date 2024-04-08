@@ -874,9 +874,13 @@
     padding-left: 50px; }
     .text-default .line p {
       font-size: 18px;
-      line-height: 22px; } }
+      line-height: 22px; }
+
+  .home-banner .mob-img {
+    display: block; }
+  .home-banner .desc-img {
+    display: none; } }
 @media (max-width: 374px) {
   .item-3x .content {
     grid-template-columns: repeat(1, 1fr); } }
-
 /*# sourceMappingURL=responsive.css.map */

@@ -358,6 +358,9 @@ header{
 .home-banner{
   position: relative;
   padding: 151px 0 0;
+  .mob-img{
+    display: none;
+  }
   .bg{
     border-radius: 15px 15px 15px 15px;
     &:after{

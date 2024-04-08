@@ -928,6 +928,14 @@ $red: #ff0007;
       line-height: 22px;
     }
   }
+  .home-banner {
+    .mob-img {
+      display: block;
+    }
+    .desc-img{
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 374px){
