@@ -13,7 +13,10 @@
 @media (max-width: 1279px) {
   .bg video, .bg iframe {
     height: calc(100% + 100px);
-    width: 150%; }
+    width: 150%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
 
   .top-line .top-menu-wrap {
     display: none; }
@@ -182,7 +185,10 @@
     padding: 65px 40px 0; }
 
   .media-section .top-revers {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  .knowledge-banner .bg:after {
+    width: calc(50vw - 100px); } }
 @media (max-width: 1199px) {
   .media-section .video-wrap .wrap {
     right: 16%;
@@ -428,7 +434,20 @@
 
   .faq-block .content {
     width: calc(100% - 30px);
-    margin: 0 15px; } }
+    margin: 0 15px; }
+
+  .knowledge-banner .bg:after {
+    width: calc(50vw - 1px); }
+
+  .slider-section .nav-wrap {
+    display: none; }
+
+  .banner-project-detail .info-project {
+    position: relative;
+    top: 0; }
+
+  .banner-project-detail .bg {
+    max-height: 600px; } }
 @media (max-width: 767px) {
   .content-width {
     width: 540px; }
@@ -588,7 +607,23 @@
     padding: 30px 0; }
 
   .media-section.no-slider {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+
+  .knowledge-banner .bg:after {
+    width: 100%; }
+
+  .slider-section .swiper-slide {
+    height: 250px; }
+
+  .contact-block {
+    width: 100%; }
+
+  .contact-block .img-wrap {
+    width: 100%;
+    margin-bottom: 20px; }
+
+  .contact-block .text {
+    width: 100%; } }
 @media (max-width: 575px) {
   .content-width {
     width: 100%;
@@ -809,7 +844,37 @@
     border-bottom: 0 !important; }
 
   .bg-grey-50-top {
-    margin: 0 10px; } }
+    margin: 0 10px; }
+
+  .contact-block {
+    padding: 15px; }
+
+  .contact-block .user-block .img-user {
+    width: 50px; }
+    .contact-block .user-block .img-user img {
+      border-radius: 15px; }
+
+  .contact-block .user-block .wrap {
+    width: calc(100% - 65px); }
+
+  .banner-project-detail .info-project {
+    width: 100%;
+    padding: 20px; }
+
+  .banner-project-detail .line {
+    width: 100%; }
+
+  .banner-project-detail .bg {
+    max-height: 700px; }
+
+  .m0-20 {
+    margin: 0 10px !important; }
+
+  .text-default .line {
+    padding-left: 50px; }
+    .text-default .line p {
+      font-size: 18px;
+      line-height: 22px; } }
 @media (max-width: 374px) {
   .item-3x .content {
     grid-template-columns: repeat(1, 1fr); } }

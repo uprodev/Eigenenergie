@@ -137,11 +137,13 @@ jQuery(document).ready(function ($) {
   });
 
   //add bg
-  if($('main section:last-child').hasClass('bg-grey') || $('main section:last-child').hasClass('item-2x-title')){
+  if($('main section:last-child').hasClass('bg-grey') || $('main section:last-child').hasClass('bg-grey-50')){
     $('footer').addClass('bg-grey')
   }else{
     $('footer').removeClass('bg-grey')
   }
+
+
 
   //accordion
   $(function() {
@@ -150,5 +152,20 @@ jQuery(document).ready(function ($) {
       $(this).parent('.accordion-item').siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
       $(this).parent('.accordion-item').toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
     })
+  });
+
+  //slider
+  var swiperFullImg = new Swiper(".full-img-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".full-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".full-next",
+      prevEl: ".full-prev",
+    },
   });
 });
