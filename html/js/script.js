@@ -168,4 +168,5 @@ jQuery(document).ready(function ($) {
       prevEl: ".full-prev",
     },
   });
+  
 });

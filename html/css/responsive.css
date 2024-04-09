@@ -823,11 +823,11 @@
 
   .contact-banner .bg-contact:before {
     width: 100%;
-    height: 730px;
-    max-height: 730px; }
+    height: 300px;
+    max-height: 300px; }
 
   .contact-banner .bg-contact img {
-    top: 700px; }
+    top: 600px; }
 
   .faq-block .content {
     width: 100%;
@@ -879,8 +879,35 @@
   .home-banner .mob-img {
     display: block; }
   .home-banner .desc-img {
-    display: none; } }
+    display: none; }
+
+  .contact-banner .text {
+    position: relative; }
+    .contact-banner .text > * {
+      position: relative;
+      z-index: 2; }
+    .contact-banner .text:after {
+      top: 0;
+      left: -12px;
+      right: -12px;
+      content: '';
+      bottom: 50px;
+      background: #F5DED4;
+      position: absolute; }
+
+  .contact-banner .form-wrap {
+    padding: 50px 30px; }
+
+  .banner-specialism-detail .text:after {
+    bottom: 10px; }
+
+  .banner-specialism-detail .btn-wrap {
+    margin-bottom: 30px; }
+
+  .over-banner-detail .content {
+    min-width: 100%; } }
 @media (max-width: 374px) {
   .item-3x .content {
     grid-template-columns: repeat(1, 1fr); } }
+
 /*# sourceMappingURL=responsive.css.map */
