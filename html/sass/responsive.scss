@@ -1,5 +1,11 @@
 $accent: #000;
 $red: #ff0007;
+
+@media (min-width: 1200px){
+  .banner-404{
+    min-height: calc(100vh - 40px);
+  }
+}
 @media (max-width:1399px){
   .row{
     width: 100%;
@@ -15,12 +21,12 @@ $red: #ff0007;
   }
 }
 @media (max-width:1279px) {
-  .bg video, .bg iframe{
+/*  .bg video, .bg iframe{
     height: calc(100% + 100px);
     width: 150%;
     left: 50%;
     transform: translate(-50%,0);
-  }
+  }*/
   .top-line .top-menu-wrap{
     display: none;
   }
@@ -256,6 +262,9 @@ $red: #ff0007;
   .faq-block .content{
     width: 69%;
   }
+  .banner-404{
+    min-height: calc(100vh - 120px);
+  }
 }
 
 @media (max-width:991px) {
@@ -478,6 +487,9 @@ $red: #ff0007;
   }
   .banner-project-detail .bg{
     max-height: 600px;
+  }
+  .bg video, .bg iframe {
+    transform: translate(-50%, -65%);
   }
 }
 

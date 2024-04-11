@@ -36,11 +36,11 @@ jQuery(document).ready(function ($) {
   });
 
 
-  //hide img
+/*  //hide img
   $(document).on('click','.video-media .video-wrap .wrap figure', function (e){
     e.preventDefault()
     $(this).hide();
-  });
+  });*/
 
   var swiper3x = new Swiper(".slider-3x", {
     slidesPerView: 1,
@@ -168,5 +168,5 @@ jQuery(document).ready(function ($) {
       prevEl: ".full-prev",
     },
   });
-  
+
 });
