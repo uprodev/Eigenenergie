@@ -3198,3 +3198,14 @@ footer .bottom ul{
     height: 220%;
   }
 }
+.bg-grey-wrap .bg-slider-img.no-slider{
+  margin-top: -14px!important;
+}
+
+.img-text.bg-white + .bg-slider-img.no-slider{
+  background: #fff;
+}
+
+.img-text + .img-text{
+  border-radius: 0 0 15px 15px;
+}
