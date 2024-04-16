@@ -1628,7 +1628,7 @@ footer {
 
 .item-2x-title {
   position: relative;
-  margin: 0;
+  margin: 0 20px;
   padding: 71px 0 76px; }
   .item-2x-title .title-wrap {
     margin-bottom: 30px; }
