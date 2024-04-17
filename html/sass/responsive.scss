@@ -219,6 +219,9 @@ $red: #ff0007;
   .knowledge-banner .bg:after {
     width: calc(50vw - 100px);
   }
+  .is-sticky .open-menu a span{
+    background: #000;
+  }
 }
 
 @media (max-width:1199px){
@@ -496,6 +499,9 @@ $red: #ff0007;
 @media (max-width:767px) {
   .content-width{
     width: 540px;
+  }
+  .top-line .logo-wrap .color{
+    top: 5px;
   }
   .home-banner .bottom-wrap li {
     width: 50%;
@@ -977,7 +983,7 @@ $red: #ff0007;
   .over-banner-detail .content {
     min-width: 100%;
   }
-  .item-2x-title{
+  .item-2x-title, .bg-wrap-cta{
     margin: 0 10px;
   }
 }

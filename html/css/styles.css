@@ -2255,7 +2255,7 @@ footer.bg-grey {
 
 .bg-grey-50-top {
   margin: 0 20px; }
-  .bg-grey-50-top .bg {
+  .bg-grey-50-top > .bg {
     bottom: 50%;
     border-radius: 0 0 15px 15px;
     background: #F0F0F0;
@@ -2721,4 +2721,19 @@ footer .bottom ul {
 
 .img-text + .img-text {
   border-radius: 0 0 15px 15px; }
+
+.bg-wrap-cta {
+  position: relative;
+  margin: 0 20px;
+  padding-top: 50px;
+  border-radius: 15px; }
+  .bg-wrap-cta .bg {
+    border-radius: 15px; }
+
+.bg-grey-50-top > .bg-cta {
+  bottom: 35%; }
+
+.bg-grey-50 > .bg-cta {
+  top: 19%;
+  border-radius: 15px 15px 0 0; }
 /*# sourceMappingURL=styles.css.map */
