@@ -3229,3 +3229,9 @@ footer .bottom ul{
   top: 19%;
   border-radius: 15px 15px 0 0;
 }
+
+.media-section .video-wrap .wrap figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
