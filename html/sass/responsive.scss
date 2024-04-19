@@ -494,6 +494,13 @@ $red: #ff0007;
   .bg video, .bg iframe {
     transform: translate(-50%, -65%);
   }
+  .contact-block.w-full{
+    width: 100%;
+  }
+
+  .contact-block.w-10{
+    width: 100%;
+  }
 }
 
 @media (max-width:767px) {

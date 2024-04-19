@@ -2760,4 +2760,10 @@ footer .bottom ul {
     -webkit-transform: scale(1.05) translate(-50%, -50%);
             transform: scale(1.05) translate(-50%, -50%); }
 
+.contact-block.w-full {
+  width: 1320px; }
+
+.contact-block.w-10 {
+  width: 975px; }
+
 /*# sourceMappingURL=styles.css.map */
