@@ -2743,4 +2743,21 @@ footer .bottom ul {
   -o-object-fit: cover;
      object-fit: cover; }
 
+.video-slide a {
+  position: relative; }
+  .video-slide a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    color: #fff;
+    font-size: 40px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease; }
+  .video-slide a:hover i {
+    -webkit-transform: scale(1.05) translate(-50%, -50%);
+            transform: scale(1.05) translate(-50%, -50%); }
+
 /*# sourceMappingURL=styles.css.map */
