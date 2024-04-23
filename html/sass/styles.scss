@@ -3264,3 +3264,22 @@ footer .bottom ul{
 .contact-block.w-10{
   width: 975px;
 }
+
+.media-section + .media-section{
+  margin-top: -120px;
+}
+
+.media-section.bg-white{
+  .bg{
+    background: #fff;
+  }
+}
+
+
+.media-section.bg-white + .media-section{
+  margin-top: -50px;
+}
+
+main{
+  overflow-y: hidden;
+}
