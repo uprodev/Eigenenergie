@@ -2,7 +2,7 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
-	<section class="home-banner banner-specialism img-visible over-banner" >
+	<section class="home-banner banner-specialism img-visible over-banner"<?php if($id) echo ' id=' . $id ?>>
 
 		<?php if ($background_image): ?>
 			<div class="bg">
@@ -23,7 +23,10 @@ if($args['row']):
 							<h1><?= $title ?></h1>
 						<?php endif ?>
 
-						<?= $description ?>
+						<?php if ($description): ?>
+							<?= add_class_content($description, 'line') ?>
+						<?php endif ?>
+						
 					</div>
 
 					<?php if ($quicklinks == 'On'): ?>

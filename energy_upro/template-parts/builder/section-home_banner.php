@@ -2,7 +2,7 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
-	<section class="home-banner<?php if($video_image == 'Image' && $desktop_image) echo ' no-video' ?>" >
+	<section class="home-banner<?php if($video_image == 'Image' && $desktop_image) echo ' no-video' ?>"<?php if($id) echo ' id=' . $id ?>>
 		<div class="wrap-video">
 
 			<?php if ($desktop_video || $desktop_image): ?>

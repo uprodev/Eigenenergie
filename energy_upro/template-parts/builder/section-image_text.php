@@ -2,32 +2,17 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
-	<div class="bg-grey-wrap">
+	<div class="bg-grey-wrap"<?php if($id) echo ' id=' . $id ?>>
 		<div class="bg bg-cta"></div>
 
 		<?php if ($items): ?>
 
 			<?php foreach ($items as $item): ?>
 
-				<?php 
-				switch ($item['content_width']) {
-					case 'Full width':
-					$width = ' col-lg-12';
-					break;
-					case 'Normal':
-					$width = ' col-lg-9';
-					break;
-
-					default:
-					$width = '';
-					break;
-				} 
-				?>
-
-				<section class="img-text<?php if($item['image_position'] == 'Right') echo ' img-text-revers'; if($item['background_color'] == 'White') echo ' bg-white' ?><?= $width ?>">
+				<section class="img-text<?php if($item['image_position'] == 'Right') echo ' img-text-revers'; if($item['background_color'] == 'White') echo ' bg-white' ?>">
 					<div class="container">
 						<div class="row">
-							<div class="content d-flex justify-content-between flex-wrap align-items-center">
+							<div class="content d-flex justify-content-between flex-wrap align-items-center<?php if($item['content_width'] == 'Full width') echo ' p-0' ?>">
 
 								<?php if ($item['image']): ?>
 									<figure class="col-6">

@@ -1,4 +1,6 @@
-<a href="<?= $args['link'] ?>">
+<?php if ($args['link']): ?>
+	<a href="<?= $args['link'] ?>"<?= $args['target'] ?>>
+	<?php endif ?>
 	
 	<?php if ($args['thumbnail']): ?>
 		<figure>
@@ -9,7 +11,18 @@
 	<div class="text-wrap">
 		
 		<?php if ($args['subtitle']): ?>
-			<p><?= $args['subtitle'] ?></p>
+
+			<?php if ($args['is_ul']): ?>
+				<ul>
+
+					<?php foreach ($args['subtitle'] as $item): ?>
+						<li><?= $item ?></li>
+					<?php endforeach ?>
+					
+				</ul>
+			<?php else: ?>
+				<p><?= $args['subtitle'] ?></p>
+			<?php endif ?>
 		<?php endif ?>
 		
 		<?php if ($args['title']): ?>
@@ -20,4 +33,7 @@
 	<div class="link-wrap">
 		<span><i class="fal fa-long-arrow-right"></i></span>
 	</div>
-</a>
+
+	<?php if ($args['link']): ?>
+	</a>
+	<?php endif ?>

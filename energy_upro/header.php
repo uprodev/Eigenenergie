@@ -11,7 +11,7 @@
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
-  <header>
+  <header<?php if(get_field('is_color_logo')) echo ' class="color-logo"' ?>>
     <div class="top-line">
       <div class="container">
         <div class="row d-flex align-items-center">
@@ -27,7 +27,7 @@
             <?php endif ?>
 
             <?php if (($field = get_field('logo_colored_h', 'option')) && pathinfo($field['url'])['extension'] == 'svg'): ?>
-            <img src="<?= $field['url'] ?>">
+            <img src="<?= $field['url'] ?>" class="color">
           <?php else: ?>
             <?= wp_get_attachment_image($field['ID'], 'full', false, array('class' => 'color')) ?>
           <?php endif ?>

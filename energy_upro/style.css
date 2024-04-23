@@ -2,6 +2,75 @@
 Theme Name: EigenEnergie
 */
 
+.block-empty{
+  margin: 0!important;
+  padding: 0!important;
+}
+
+.bg-slider-img.no-slider + .item-2x-title{
+  padding-top: 0!important;
+  margin-top: -30px!important;
+}
+
 .bg-slider-img .bottom figure img{
   height: auto;
+}
+
+.contact-block .img-wrap img{
+  height: auto;
+}
+
+.contact-block .text p{
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.top-line .logo-wrap .color{
+  height: auto;
+}
+
+.contact-banner .item-full p a{
+  display: inline!important;
+}
+.top-line .logo-wrap .color{
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.color-logo .top-line .logo-wrap .color{
+  opacity: 1;
+}
+
+.color-logo .is-sticky .top-line .lang-wrap > a i {
+  color: #744867;
+}
+.color-logo .is-sticky .top-menu > li > a {
+  color: #000;
+}
+
+.media-section + .media-section {
+  margin-top: -120px; }
+
+.media-section.bg-white .bg {
+  background: #fff; }
+
+.media-section.bg-white + .media-section {
+  margin-top: -50px; }
+
+main{
+  overflow-y: hidden;
+}
+
+.media-section + .media-section.bg-white{
+  margin-top: -50px;
+}
+
+@media (max-width: 575px){
+  .contact-banner .item{
+    width: 100%;
+  }
+}
+@media (max-width: 375px){
+
 }

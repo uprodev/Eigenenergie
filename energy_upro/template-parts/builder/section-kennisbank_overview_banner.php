@@ -53,7 +53,7 @@ if($args['row']):
 	if($is_selection && $selection) $args_2['post__not_in'] = $args['post__in'];*/
 	?>
 
-	<div class="bg-grey-wrap ">
+	<div class="bg-grey-wrap"<?php if($id) echo ' id=' . $id ?>>
 		<div class="bg br-15-0"></div>
 
 		<?php if ($background_image): ?>

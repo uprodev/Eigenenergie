@@ -2,8 +2,8 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
-	<section class="media-section video-media">
-		<div class="bg"></div>
+	<section class="media-section no-slider"<?php if($id) echo ' id=' . $id ?>>
+		<div class="bg br-15"></div>
 		<div class="container">
 			<div class="row">
 				<div class="top d-flex justify-content-between flex-wrap<?php if($video_or_image == 'Image' && $image_left_right == 'Right') echo ' top-revers' ?>">
@@ -18,13 +18,13 @@ if($args['row']):
 									<?php if ($image): ?>
 										<?= wp_get_attachment_image($image['ID'], 'full') ?>
 									<?php endif ?>
-									
+
 									<?php if ($video_or_image == 'Video' && $video): ?>
 										<div class="icon-wrap">
 											<i class="fal fa-play-circle"></i>
 										</div>
 									<?php endif ?>
-									
+
 									<?php if ($video_or_image == 'Video' && $video): ?>
 									</a>
 								<?php endif ?>
@@ -37,11 +37,11 @@ if($args['row']):
 						<?php if ($title): ?>
 							<h2><?= $title ?></h2>
 						<?php endif ?>
-						
+
 						<?php if ($text): ?>
 							<?= add_class_content($text, 'line') ?>
 						<?php endif ?>
-						
+
 					</div>
 				</div>
 
@@ -55,9 +55,9 @@ if($args['row']):
 							<?php if ($bottom['title']): ?>
 								<h2 class="title"><?= $bottom['title'] ?></h2>
 							<?php endif ?>
-							
+
 							<?= $bottom['text'] ?>
-							
+
 						</div>
 
 						<?php if (!empty($bottom['cards'])): ?>
@@ -104,11 +104,11 @@ if($args['row']):
 															<?php if ($subtitle): ?>
 																<p><?= $subtitle ?></p>
 															<?php endif ?>
-															
+
 															<?php if ($title): ?>
 																<h6><?= $title ?></h6>
 															<?php endif ?>
-															
+
 														</a>
 													</div>
 
@@ -117,7 +117,7 @@ if($args['row']):
 												<?php endforeach ?>
 
 											<?php endif ?>
-											
+
 										<?php endforeach ?>
 
 									</div>
@@ -125,14 +125,14 @@ if($args['row']):
 									<?php if ($counter > 3): ?>
 										<div class="swiper-pagination pagination-3x"></div>
 									<?php endif ?>
-									
+
 								</div>
 							</div>
 						<?php endif ?>
 
 					</div>
 				<?php endif ?>
-				
+
 			</div>
 		</div>
 	</section>

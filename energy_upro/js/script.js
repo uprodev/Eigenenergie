@@ -169,4 +169,18 @@ jQuery(document).ready(function ($) {
     },
   });
 
+  if( $('.contact-banner .input-wrap-check input').is(':checked') ){
+    $('.contact-banner .input-wrap-submit').removeClass('is-not')
+  }else{
+    $('.contact-banner .input-wrap-submit').addClass('is-not')
+  }
+
+  $(document).on('click','.contact-banner .input-wrap-check input', function (e) {
+    if( $('.contact-banner .input-wrap-check input').is(':checked') ){
+      $('.contact-banner .input-wrap-submit').removeClass('is-not');
+    }else{
+      $('.contact-banner .input-wrap-submit').addClass('is-not')
+    }
+  })
+
 });

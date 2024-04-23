@@ -50,7 +50,7 @@ if($args['row']):
 		</section>
 	<?php endif ?>
 	
-	<section class="home-banner banner-specialism img-visible home-banner-index" >
+	<section class="home-banner banner-specialism img-visible home-banner-index"<?php if($id) echo ' id=' . $id ?>>
 		<div class="container">
 			<div class="row">
 				<div class="content-flex d-flex justify-content-between flex-wrap align-items-end">
