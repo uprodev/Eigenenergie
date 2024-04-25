@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) { 
 
+	$('.header_menu li:has(ul) > a').append('<i class="far fa-chevron-down"></i>');
+
 	$(document).on('click', '.more_posts', function(e){
 		e.preventDefault();
 		let _this = $(this);

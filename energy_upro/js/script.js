@@ -116,15 +116,20 @@ jQuery(document).ready(function ($) {
 
 
   //sub-menu open/close - mob-menu
-  $(document).on('click', '.mob-menu .sub-item>a', function (e){
-    e.preventDefault();
+  $(document).on('click', '.mob-menu li>a', function (e){
     let item = $(this).closest('li').find('.sub-menu');
-    $(this).toggleClass('is-open');
-    if($(this).hasClass('is-open')){
-      item.slideDown();
-    }else{
-      item.slideUp();
+    if(item.length>0){
+      e.preventDefault();
+      $(this).toggleClass('is-open');
+      if($(this).hasClass('is-open')){
+        item.slideDown();
+      }else{
+        item.slideUp();
+      }
     }
+
+
+
   });
 
   //scroll

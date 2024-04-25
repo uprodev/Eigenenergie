@@ -37,7 +37,7 @@
     <?php endif ?>
 
     <div class="right col-6 col-sm-9 p-0 d-flex justify-content-end align-items-center">
-      <nav class="top-menu-wrap">
+      <nav class="top-menu-wrap header_menu">
 
         <?php wp_nav_menu( array(
           'theme_location'  => 'header',
@@ -90,7 +90,7 @@
       </div>
     <?php endif ?>
 
-    <nav class="mob-menu-wrap">
+    <nav class="mob-menu-wrap header_menu">
 
       <?php wp_nav_menu( array(
         'theme_location'  => 'header',

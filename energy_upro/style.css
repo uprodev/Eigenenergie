@@ -59,11 +59,15 @@ Theme Name: EigenEnergie
   margin-top: -50px; }
 
 main{
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .media-section + .media-section.bg-white{
   margin-top: -50px;
+}
+
+.bg-grey-50-top > .bg-cta {
+  bottom: 50%;
 }
 
 @media (max-width: 575px){

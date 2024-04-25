@@ -47,18 +47,21 @@ if($args['row']):
 
 				<?php if (!empty($bottom)): ?>
 					<div class="bottom">
-						<div class="line-wrap">
-							<img src="<?= get_stylesheet_directory_uri() ?>/img/icon-1.svg" alt="">
-						</div>
-						<div class="wrap-text">
 
-							<?php if ($bottom['title']): ?>
-								<h2 class="title"><?= $bottom['title'] ?></h2>
-							<?php endif ?>
+						<?php if ($bottom['title'] || $bottom['text']): ?>
+							<div class="line-wrap">
+								<img src="<?= get_stylesheet_directory_uri() ?>/img/icon-1.svg" alt="">
+							</div>
+							<div class="wrap-text">
 
-							<?= $bottom['text'] ?>
+								<?php if ($bottom['title']): ?>
+									<h2 class="title"><?= $bottom['title'] ?></h2>
+								<?php endif ?>
 
-						</div>
+								<?= $bottom['text'] ?>
+
+							</div>
+						<?php endif ?>
 
 						<?php if (!empty($bottom['cards'])): ?>
 							<div class="slider-wrap">

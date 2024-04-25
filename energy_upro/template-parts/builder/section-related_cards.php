@@ -13,23 +13,23 @@ if($args['row']):
 
 	?>
 
-	<div class="bg-wrap-cta<?php if(!$is_fields) echo ' block-empty'; if($background_color == 'Grey') echo ' bg-grey'; if($background_color_top == 'Grey') echo ' bg-grey-50-top'; if($background_color_bottom == 'Grey') echo ' bg-grey-50'; ?>"<?php if($id) echo ' id=' . $id ?>>
+	<div class="bg-wrap-cta<?php if($background_color == 'Grey') echo ' bg-grey'; if($background_color_top == 'Grey') echo ' bg-grey-50-top'; if($background_color_bottom == 'Grey') echo ' bg-grey-50'; ?>"<?php if($id) echo ' id=' . $id ?>>
+		<div class="bg bg-cta"></div>
+		<section class="bg-slider-img no-slider<?php if(!$is_fields) echo ' block-empty' ?>">
+			<div class="bg"></div>
+			<div class="container">
+				<div class="row">
 
-		<?php if ($is_fields): ?>
-			<div class="bg bg-cta"></div>
-			<section class="bg-slider-img no-slider ">
-				<div class="bg"></div>
-				<div class="container">
-					<div class="row">
+					<?php if ($is_fields): ?>
 						<div class="bg-slider-img no-slider">
 							<?php get_template_part('parts/cta', null, ['title' => $title, 'text' => $text, 'image' => $image, 'button' => $button]) ?>
 						</div>
-					</div>
+					<?php endif ?>
 
 				</div>
-			</section>
-		<?php endif ?>
 
+			</div>
+		</section>
 		<section class="item-2x item-2x-title">
 			<div class="container">
 				<div class="row">
