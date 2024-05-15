@@ -30,10 +30,10 @@
 		<?php endif ?>
 		
 	</div>
-	<div class="link-wrap">
-		<span><i class="fal fa-long-arrow-right"></i></span>
-	</div>
 
 	<?php if ($args['link']): ?>
+		<div class="link-wrap">
+			<span><i class="fal fa-long-arrow-right"></i></span>
+		</div>
 	</a>
 	<?php endif ?>

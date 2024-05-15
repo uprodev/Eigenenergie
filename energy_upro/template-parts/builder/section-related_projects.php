@@ -90,7 +90,7 @@ if($args['row']):
 
 				<?php if ($button_): ?>
 					<div class="btn-wrap-full d-flex justify-content-center">
-						<a href="<?= $button_['url'] ?>" class="btn-default"<?php if($button_['target']) echo ' target="_blank"' ?>><?= $button_['title'] ?></a>
+						<a href="<?= $button_['url'] ?>" class="btn-default<?php if($is_purple_button) echo ' btn-pur' ?>"<?php if($button_['target']) echo ' target="_blank"' ?>><?= $button_['title'] ?></a>
 					</div>
 				<?php endif ?>
 

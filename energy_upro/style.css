@@ -9,7 +9,7 @@ Theme Name: EigenEnergie
 
 .bg-slider-img.no-slider + .item-2x-title{
   padding-top: 0!important;
-  margin-top: -30px!important;
+  /*margin-top: -30px!important;*/
 }
 
 .bg-slider-img .bottom figure img{

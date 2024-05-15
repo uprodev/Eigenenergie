@@ -1,5 +1,6 @@
 </main>
 
+<?php if (!is_404() && !is_page(apply_filters('wpml_object_id', 652, 'page'))): ?>
 <footer>
   <div class="bg"></div>
   <div class="container">
@@ -142,8 +143,9 @@
     <?php endif ?>
 
   </footer>
+<?php endif ?>
 
-  <?php if (get_field('off_on_1') == 'On'): ?>
+  <?php if (get_field('off_on_1') == 'On' && !$_COOKIE['is_popup_closed']): ?>
 
     <?php 
 

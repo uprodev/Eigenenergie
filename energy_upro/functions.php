@@ -32,6 +32,12 @@ function load_style_script(){
 }
 
 
+add_action('admin_enqueue_scripts', 'load_admin_style');
+function load_admin_style() {
+    wp_enqueue_style('admin', get_stylesheet_directory_uri() . '/css/admin.css');
+}
+
+
 add_action('after_setup_theme', function(){
 	register_nav_menus( array(
 		'header' => 'Header menu',
@@ -123,4 +129,21 @@ function my_acf_layout_thumbnail($thumbnail, $field, $layout){
     // Must return an URL or Attachment ID
     return get_stylesheet_directory_uri() . '/img/acf/' . $layout['name'] . '.png';
 
+}
+
+
+function removeObjectsWithSameName($array) {
+    $uniqueNames = [];
+    $resultArray = [];
+
+    foreach ($array as $item) {
+        $name = $item->term_id;
+
+        if (!in_array($name, $uniqueNames)) {
+            $uniqueNames[] = $name;
+            $resultArray[] = $item;
+        }
+    }
+
+    return $resultArray;
 }

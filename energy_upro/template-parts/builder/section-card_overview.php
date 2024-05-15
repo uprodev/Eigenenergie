@@ -25,7 +25,20 @@ if($args['row']):
 
 								<?php 
 								$thumbnail = has_post_thumbnail() ? get_the_post_thumbnail(get_the_ID(), 'full') : '';
-								$terms = wp_get_object_terms(get_the_ID(), get_post_type() . '_cat');
+								
+								switch (get_post_type()) {
+									case 'post':
+									$terms = wp_get_object_terms(get_the_ID(), 'category');
+									break;
+									case 'page':
+									$terms = '';
+									break;
+									
+									default:
+									$terms = wp_get_object_terms(get_the_ID(), get_post_type() . '_cat');
+									break;
+								}
+								
 								$term = $terms ? $terms[0]->name : '';
 								?>
 
@@ -57,6 +70,13 @@ if($args['row']):
 
 					</div>
 				</div>
+
+				<?php if ($button): ?>
+					<div class="btn-wrap-full d-flex justify-content-center">
+						<a href="<?= $button['url'] ?>" class="btn-default btn-pur"<?php if($button['target']) echo ' target="_blank"' ?>><?= $button['title'] ?></a>
+					</div>
+				<?php endif ?>
+
 			</div>
 		</div>
 	</section>

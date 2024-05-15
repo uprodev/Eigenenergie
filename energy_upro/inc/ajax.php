@@ -50,6 +50,7 @@ function filter_by_term () {
 			)
 		)
 	);
+	if($_POST['posts']) $args['post__in'] = explode(',', $_POST['posts']);
 
 	$wp_query = new WP_Query($args);
 
@@ -61,10 +62,12 @@ function filter_by_term () {
 
 				<?php 
 				$thumbnail = has_post_thumbnail() ? get_the_post_thumbnail(get_the_ID(), 'full') : '';
+				$date = $_POST['is_date'] ? get_the_date() : '';
+				$subtitle = $_POST['is_category_in_subtitle'] ? wp_get_object_terms(get_the_ID(), get_post_type() . '_cat')[0]->name : __(mb_strtoupper(get_post_type()));
 				?>
 
 				<div class="item">
-					<?php get_template_part('parts/content', $_POST['template'], ['link' => get_permalink(), 'target' => '', 'thumbnail' => $thumbnail, 'subtitle' => __(mb_strtoupper(get_post_type())), 'title' => get_the_title()]) ?>
+					<?php get_template_part('parts/content', $_POST['template'], ['link' => get_permalink(), 'target' => '', 'thumbnail' => $thumbnail, 'subtitle' => $subtitle, 'title' => get_the_title(), 'date' => $date]) ?>
 				</div>
 
 			<?php endwhile; ?>

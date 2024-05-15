@@ -45,14 +45,14 @@ if($args['row']):
 									<p <?php if($is_video) echo ' class="video-p"' ?>>
 
 										<?php if ($is_image): ?>
-											<?= wp_get_attachment_image($item['image_thumbnail']['ID'], 'full') ?>
+											<?= wp_get_attachment_image($item['image']['ID'], 'full') ?>
 										<?php endif ?>
 
 										<?php if ($is_video): ?>
 											<a data-fancybox="" href="<?= $item['video'] ?>?autoplay=1">
 
-												<?php if ($item['image']): ?>
-													<?= wp_get_attachment_image($item['image']['ID'], 'full') ?>
+												<?php if ($item['image_thumbnail']): ?>
+													<?= wp_get_attachment_image($item['image_thumbnail']['ID'], 'full') ?>
 												<?php endif ?>
 												
 												<i class="fal fa-play-circle"></i>

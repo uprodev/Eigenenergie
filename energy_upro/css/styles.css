@@ -366,7 +366,8 @@ header {
     border-radius: 0 0 15px 15px;
     overflow: hidden; }
     .home-banner .bottom-wrap li {
-      width: 20%;
+      width: auto;
+      flex: 1 1 auto;
       position: relative;
       overflow: hidden;
       padding: 38px 30px;
@@ -1300,7 +1301,7 @@ footer {
   .banner-specialism .left {
     width: 550px;
     padding: 0;
-    margin-top: -20px; }
+    margin-top: 0; }
   .banner-specialism .select-block {
     width: 270px;
     padding-bottom: 38px; }
@@ -1930,7 +1931,7 @@ footer.bg-grey {
       margin: 0; }
       .contact-banner .item p span {
         display: inline-block;
-        margin-left: 20px; }
+        margin-left: 15px; }
       .contact-banner .item p a {
         font-size: 15px;
         line-height: 22px;
@@ -1954,7 +1955,10 @@ footer.bg-grey {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      .contact-banner .item ul li a i {
+.contact-banner .item-full ul li a{
+  color: #744867;
+}
+.contact-banner .item ul li a i {
         margin-right: 15px;
         position: relative; }
       .contact-banner .item ul li a:hover {
@@ -2791,6 +2795,107 @@ footer .bottom ul {
   font-size: 14px;
 }
 
+.img-text figure{
+  max-height: 450px;
+}
 
+.img-text figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.contact-banner .wpcf7-not-valid-tip{
+  font-size: 12px;
+  color: #fff;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output{
+  border-radius: 15px;
+  background:   #ffb900;
+  color: #fff;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border-color: #46b450;
+  background:#46b450;
+  color: #fff;
+}
+.form-default .input-wrap-submit{
+  width: fit-content;
+  position: relative;
+}
+.form-default .input-wrap-submit.is-not:after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  cursor: not-allowed;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.contact-banner .item ul{
+  margin-top: 15px;
+}
+
+.text-img-block figure{
+  position: relative;
+  width: auto!important;
+  max-width: 50%;
+  height: fit-content;
+}
+.text-img-block figure:after{
+  position: absolute;
+  top: calc(100% - 112px);
+  left: 0;
+  height: 63px;
+  content: '';
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: 0px 94px 31px 0px rgba(0, 0, 0, 0.25);
+}
+
+.img-text.bg-white .bg{
+  background: #fff;
+}
+.img-text.bg-grey-50 .bg{
+  background: #F0F0F0;
+}
+.img-text.bg-grey-50{
+  background: #fff;
+}
+.img-text.bg-grey-50-top .bg{
+  background: #F0F0F0;
+}
+
+.img-text.bg-grey-50-top{
+  background: #fff;
+}
+
+.media-section .text p:last-child{
+  margin-bottom: 0;
+}
+
+.bg-wrap-cta + .bg-slider-img{
+  margin-top: -60px;
+}
+
+.text-default .line{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.media-section.no-slider{
+  min-height: 500px;
+}
+
+.color-logo .btn-head.btn-pur {
+  background: #744867;
+}
+.color-logo .btn-head.btn-pur:hover{
+  background: #C1C591;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,9 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
-	<section class="media-section no-slider"<?php if($id) echo ' id=' . $id ?>>
+<?php $is_video = $video_or_image == 'Video' && $video ?>
+
+	<section class="media-section<?php if(!($bottom && $bottom['cards'])) echo ' no-slider' ?><?php if($is_video) echo ' video-media' ?>"<?php if($id) echo ' id=' . $id ?>>
 		<div class="bg br-15"></div>
 		<div class="container">
 			<div class="row">
@@ -11,7 +13,7 @@ if($args['row']):
 						<div class="wrap">
 							<figure>
 
-								<?php if ($video_or_image == 'Video' && $video): ?>
+								<?php if ($is_video): ?>
 									<a data-fancybox="" href="<?= $video ?>?autoplay=1">
 									<?php endif ?>
 
@@ -19,13 +21,13 @@ if($args['row']):
 										<?= wp_get_attachment_image($image['ID'], 'full') ?>
 									<?php endif ?>
 
-									<?php if ($video_or_image == 'Video' && $video): ?>
+									<?php if ($is_video): ?>
 										<div class="icon-wrap">
 											<i class="fal fa-play-circle"></i>
 										</div>
 									<?php endif ?>
 
-									<?php if ($video_or_image == 'Video' && $video): ?>
+									<?php if ($is_video): ?>
 									</a>
 								<?php endif ?>
 

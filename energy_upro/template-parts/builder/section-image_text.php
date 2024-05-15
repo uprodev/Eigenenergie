@@ -2,17 +2,18 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
-	<div class="bg-grey-wrap"<?php if($id) echo ' id=' . $id ?>>
-		<div class="bg bg-cta"></div>
+	<div class="<?php if($background_color == 'Grey') echo ' bg-grey'; if($background_color_top == 'Grey') echo ' bg-grey-50-top'; if($background_color_bottom == 'Grey') echo ' bg-grey-50'; ?>"<?php if($id) echo ' id=' . $id ?>>
+		<div class="bg "></div>
 
 		<?php if ($items): ?>
 
 			<?php foreach ($items as $item): ?>
 
-				<section class="img-text<?php if($item['image_position'] == 'Right') echo ' img-text-revers'; if($item['background_color'] == 'White') echo ' bg-white' ?>">
+				<section class="img-text  <?php if($item['image_position'] == 'Right') echo ' img-text-revers'; if($item['background_color'] == 'White') echo ' bg-white' ?>">
+					<div class="bg"></div>
 					<div class="container">
 						<div class="row">
-							<div class="content d-flex justify-content-between flex-wrap align-items-center<?php if($item['content_width'] == 'Full width') echo ' p-0' ?>">
+							<div class="content d-flex justify-content-between flex-wrap <?php if($item['content_width'] == 'Full width') echo ' p-0' ?>">
 
 								<?php if ($item['image']): ?>
 									<figure class="col-6">

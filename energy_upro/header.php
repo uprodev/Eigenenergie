@@ -76,7 +76,7 @@
   </div>
   <div class="wrap">
 
-    <?php if ($field = get_field('logo_white_h', 'option')): ?>
+    <?php if ($field = get_field('logo_colored_h', 'option')): ?>
       <div class="logo-wrap">
         <a href="<?= get_home_url() ?>">
 

@@ -1,0 +1,17 @@
+.acf-fc-popup ul{
+  display: flex!important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.acf-fc-popup ul li{
+  width: 49%;
+}
+
+.acfe-flexible-layout-thumbnail.acfe-flexible-layout-thumbnail-no-modal{
+  width: 100% !important;
+}
+
+.acf-tooltip{
+  min-width: 700px!important;
+}

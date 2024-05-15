@@ -24,6 +24,7 @@
     display: none; }
 
   .open-menu {
+    display: inline-block!important;
     margin: 8px 0 0 30px; }
     .open-menu a {
       display: -webkit-box;
@@ -66,7 +67,7 @@
       padding: 33px 30px 100px;
       width: 320px;
       float: right;
-      background: #000;
+      background: #fff;
       min-height: 100vh; }
     .menu-responsive .btn-wrap {
       margin-top: 30px;
@@ -80,7 +81,7 @@
       .menu-responsive .close-menu i {
         font-size: 18px;
         line-height: 1;
-        color: #fff; }
+        color: #000; }
       .menu-responsive .close-menu a {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -104,7 +105,7 @@
           margin-bottom: 10px;
           text-align: left; }
           .menu-responsive .mob-menu-wrap > ul > li > a {
-            color: #fff;
+            color: #000;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -113,8 +114,8 @@
           position: relative;
           padding-right: 25px; }
           .menu-responsive .mob-menu-wrap > ul .sub-item > a:after {
-            border-bottom: 1px solid #fff;
-            border-right: 1px solid #fff;
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
             content: '';
             display: block;
             height: 7px;
@@ -199,6 +200,10 @@
     right: 16%;
     height: 400px; }
 
+  .media-section.no-slider {
+    min-height: 300px;
+  }
+
   .media-section .top {
     padding: 70px 40px 6px; }
 
@@ -239,6 +244,9 @@
 @media (max-width: 991px) {
   .content-width {
     width: 720px; }
+  .menu-responsive .wrap{
+    width: 100%;
+  }
 
   .home-banner h1 {
     font-size: 36px;
@@ -480,6 +488,8 @@
     padding: 40px 20px; }
 
   .text-img-block figure {
+    max-width: 100%;
+    width: 100%!important;
     margin: 30px 0 30px; }
 
   .text-img-block .bottom ul li {
@@ -931,6 +941,13 @@
   .item-2x-title, .bg-wrap-cta {
     margin: 0 10px; }
 
+  .bg-slider-img .top + .bottom figure{
+    display: none;
+  }
+  .text-default .line{
+    font-size: 18px;
+    line-height: 24px;
+  }
   .top-line .logo-wrap .color {
     top: 0; } }
 @media (max-width: 374px) {

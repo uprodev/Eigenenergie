@@ -106,6 +106,7 @@ jQuery(document).ready(function ($) {
   }
   $(document).on('click', '.close-fix', function (e) {
     e.preventDefault();
+    document.cookie = "is_popup_closed=true; path=/";
     $('.fix-block').slideUp();
   });
 
@@ -138,7 +139,7 @@ jQuery(document).ready(function ($) {
     e.preventDefault();
     var id  = $(this).attr('href'),
       top = $(id).offset().top;
-    $('body,html').animate({scrollTop: top - 100}, 1000);
+    $('body,html').animate({scrollTop: top - 100}, 20);
   });
 
   //add bg

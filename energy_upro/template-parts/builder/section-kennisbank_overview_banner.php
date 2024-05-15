@@ -19,14 +19,16 @@ if($args['row']):
 		] );
 	}
 	if ($is_selection && $selection) {
-		$taxonomies = array_unique(wp_list_pluck($selection, 'post_type'));
-		foreach ($taxonomies as &$taxonomy) {
-			$taxonomy .= '_cat';
+		$terms_ = [];
+		foreach ($selection as $post_) {
+			$post_terms = wp_get_object_terms($post_->ID, $post_->post_type . '_cat');
+			if ($post_terms) {
+				foreach ($post_terms as $post_term) {
+					$terms_[] = $post_term;
+				}
+			}
 		}
-		$terms = get_terms( [
-			'taxonomy' => $taxonomies,
-			'hide_empty' => false,
-		] );
+		$terms = removeObjectsWithSameName($terms_);
 	}
 
 	$args = array(
@@ -103,9 +105,16 @@ if($args['row']):
 
 								</select>
 								<input type="hidden" name="post_type" value="<?= implode(',', $args['post_type']) ?>">
+
+								<?php if ($is_selection && $selection): ?>
+									<input type="hidden" name="posts" value="<?= implode(',', $args['post__in']) ?>">
+								<?php endif ?>
+								
 								<input type="hidden" name="template" value="<?= $template ?>">
 								<input type="hidden" name="wraper_class" value="content d-flex flex-wrap p-0">
 								<input type="hidden" name="posts_per_page" value="<?= $posts_per_page ?>">
+								<input type="hidden" name="is_date" value="true">
+								<input type="hidden" name="is_category_in_subtitle" value="true">
 								<input type="hidden" name="action" value="filter_by_term">
 							</form>
 						<?php endif ?>
